@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PercolatedMug | Mathematical Tools</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>PercolatedMug</h1>
+        <p>Exploring the beauty of mathematics through code.</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Featured Concept</h2>
+            <p>The sum of squares is given by: $$\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}$$</p>
+        </section>
+
+        <section id="tools-grid">
+            <div class="card">
+                <h3>Fractal Visualizer</h3>
+                <canvas id="sketch" data-processing-sources="tools/fractal.pde"></canvas>
+                <p>An interactive fractal script.</p>
+            </div>
+
+            <div class="card">
+                <h3>Matrix Solver</h3>
+                <div id="output">Result: 0</div>
+                <button onclick="runMathScript()">Run Script</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 PercolatedMug | Licensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></p>
+        <p><a href="https://github.com/YOUR_USERNAME/percolatedmug.github.io">View on GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
