@@ -1,28 +1,41 @@
 :root {
+    --pastel-red: #FF6F91;
+    --pastel-green: #6FFFB0;
+    --pastel-blue: #6A8DFF;
+    --pastel-yellow: #FFD86F;
+    --pastel-cyan: #6FFFE9;
+    --pastel-magenta: #FF6FE9;
+
     color-scheme: light dark;
     --bg: light-dark(#FFFFFF, #000000);
-    --card-bg: light-dark(#FFFFFF, #000000);
     --text: light-dark(#000000, #FFFFFF);
-    --accent: light-dark(#007BFF, #1E90FF);
+    --alt-bg: light-dark(#000000, #FFFFFF);
+    --alt-text: light-dark(#FFFFFF, #000000);
 }
 
+/* Header Styling */
+header.site-header {
+    display: flex;
+    padding: 1rem 1rem;
+    align-items: center;
+    text-align: center;
+    background: var(--alt-bg);
+    color: var(--alt-text);
+}
+.header-logo { flex: 1; }
+.header-text { flex: 8; }
+.header-menu { flex: 1; }
+
+/* Main Content Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Garamond, serif;
     background-color: var(--bg);
     color: var(--text);
-    margin: 0;
     line-height: 1.6;
 }
 
-header {
-    text-align: center;
-    padding: 3rem 1rem;
-    background: linear-gradient(180deg, #1f1f1f 0%, #121212 100%);
-}
-
-h1 { color: var(--accent); margin: 0; }
-
 main { max-width: 900px; margin: auto; padding: 20px; }
+h1, h2, h3 { font-family: Garamond, serif; }
 
 #tools-grid {
     display: grid;
@@ -31,7 +44,7 @@ main { max-width: 900px; margin: auto; padding: 20px; }
 }
 
 .card {
-    background: var(--card-bg);
+    background: var(--bg);
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #333;
@@ -51,4 +64,13 @@ button {
     border-radius: 4px;
 }
 
-footer { text-align: center; padding: 2rem; font-size: 0.8rem; opacity: 0.7; }
+/* Footer Styling */
+footer {
+    background-color: var(--alt-bg);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+    color: var(--alt-text);
+    margin-top: 40px;
+    opacity: 1;
+}

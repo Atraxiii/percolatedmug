@@ -6,3 +6,5 @@ function runMathScript() {
 document.addEventListener("DOMContentLoaded", function() {
     console.log("PercolatedMug scripts initialized.");
 });
+
+// Logo animation is handled in logo.js
