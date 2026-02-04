@@ -1,76 +1,59 @@
 :root {
-    --pastel-red: #FF6F91;
-    --pastel-green: #6FFFB0;
-    --pastel-blue: #6A8DFF;
-    --pastel-yellow: #FFD86F;
-    --pastel-cyan: #6FFFE9;
-    --pastel-magenta: #FF6FE9;
+  --pastel-red: #ff6f91;
+  --pastel-green: #6fffb0;
+  --pastel-blue: #6a8dff;
+  --pastel-yellow: #ffd86f;
+  --pastel-cyan: #6fffe9;
+  --pastel-magenta: #ff6fe9;
 
-    color-scheme: light dark;
-    --bg: light-dark(#FFFFFF, #000000);
-    --text: light-dark(#000000, #FFFFFF);
-    --alt-bg: light-dark(#000000, #FFFFFF);
-    --alt-text: light-dark(#FFFFFF, #000000);
+  color-scheme: light dark;
+  --bg: light-dark(#ffffff, #000000);
+  --text: light-dark(#000000, #ffffff);
+  --alt-bg: light-dark(#000000, #ffffff);
+  --alt-text: light-dark(#ffffff, #000000);
 }
 
 /* Header Styling */
 header.site-header {
-    display: flex;
-    padding: 1rem 1rem;
-    align-items: center;
-    text-align: center;
-    background: var(--alt-bg);
-    color: var(--alt-text);
+  display: flex;
+  padding: 1rem 1rem;
+  align-items: center;
+  text-align: center;
+  background: var(--alt-bg);
+  color: var(--alt-text);
 }
-.header-logo { flex: 1; }
-.header-text { flex: 8; }
-.header-menu { flex: 1; }
+.header-logo {
+  flex: 1;
+}
+.header-text {
+  flex: 8;
+}
+.header-menu {
+  flex: 1;
+}
 
 /* Main Content Styling */
+h1,
+h2,
+h3 {
+  font-family: Garamond, serif;
+}
 body {
-    font-family: Garamond, serif;
-    background-color: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
+  font-family: Garamond, serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
 }
-
-main { max-width: 900px; margin: auto; padding: 20px; }
-h1, h2, h3 { font-family: Garamond, serif; }
-
-#tools-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: var(--bg);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #333;
-    transition: transform 0.2s;
-}
-
-.card:hover { transform: translateY(-5px); border-color: var(--accent); }
-
-canvas { width: 100%; height: auto; border-radius: 4px; }
-
-button {
-    background: var(--accent);
-    border: none;
-    padding: 10px 15px;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
 
 /* Footer Styling */
 footer {
-    background-color: var(--alt-bg);
-    text-align: center;
-    padding: 2rem;
-    font-size: 1rem;
-    color: var(--alt-text);
-    margin-top: 40px;
-    opacity: 1;
+  background-color: var(--alt-bg);
+  color: var(--alt-text);
+  text-align: center;
+  padding: 1rem;
 }
